@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/receivers_profile_image_chatting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile_pic" />
+
+    <ImageView
+        android:id="@+id/image_received_left_chatting"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/receivers_profile_image_chatting"
+        android:visibility="gone"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receivers_profile_image_chatting"
+        android:layout_alignLeft="@id/receivers_profile_image_chatting"
+        android:layout_alignRight="@id/receivers_profile_image_chatting"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/receivers_profile_image_chatting">
+
+        <TextView
+            android:id="@+id/message_chatting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#E6CECE"
+            android:padding="5dp"
+            android:text="Message Placeholder"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

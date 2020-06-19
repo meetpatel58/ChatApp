@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/search_profile_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#D6C0C0"
+        android:src="@drawable/profile_pic">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/search_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/search_profile_image"
+        android:text="Username"
+        android:textSize="24sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/status_online"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignRight="@id/search_profile_image"
+        android:layout_alignBottom="@id/search_profile_image"
+        android:src="@drawable/profile_pic"
+        android:visibility="gone"
+        app:civ_border_color="#12C32F"
+        app:civ_border_width="5dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/status_offline"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignRight="@id/search_profile_image"
+        android:layout_alignBottom="@id/search_profile_image"
+        android:src="@drawable/profile_pic"
+        android:visibility="gone"
+        app:civ_border_color="#A58E8E"
+        app:civ_border_width="5dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+</RelativeLayout>
